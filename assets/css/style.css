@@ -1,0 +1,23 @@
+
+    @font-face {
+        font-family: 'JetBrains Mono';
+        src: url('../fonts/JetBrainsMono-Regular.woff2');
+    }
+
+    body {
+        font-family: 'JetBrains Mono' !important;
+    }
+
+    html {
+        font-size: 12px;
+    }
+    .container {
+        min-height: 100vh;
+    }
+
+    div > h3 {
+        white-space: nowrap;
+    }
+    div > div {
+        min-width: 60vw;
+    }

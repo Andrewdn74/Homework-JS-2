@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <title>Accessibility Demo Example</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="./assets/images/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+
+    <!-- FA5 CSS -->
+    <link rel="stylesheet" href="./assets/fa/css/all.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script src="./assets/js/app.js"></script>
+
+  </head>
+  <body onload="sayWords(), sayDigit(), sayDigit1()">    
+      <div class="container d-flex flex-column align-items-center justify-content-center">
+        <div>
+          <div class="d-flex mb-2">
+            <h3>Enter the string </h3>
+            <input oninput="sayWords()" class="form-control" id="income"  value="ICAO">
+          </div>
+          <button onclick="sayWords()" class="btn btn-primary w-100 mb-5 mt-5">Translate</button>
+          <h1 class="mb-5">ICAO translation: <output id="result"></output></h1>
+          <div class="d-flex mb-2">
+            <h3>Введите сумму от 0 до 999 грн</h3>
+            <input oninput="sayDigit()" type="number" class="form-control" id="incomeDigit"  min="0" max="999" value="11">
+          </div>
+          <button onclick="sayDigit()" class="btn btn-primary w-100 mb-5 mt-5">Перевести</button>
+          <h1 class="mb-5">Перевод: <output id="resultDigit"></output></h1>
+          <div class="d-flex mb-2">
+            <h3>Введите сумму от 0 до 999 999 999 грн</h3>
+            <input oninput="sayDigit1()" type="number" class="form-control" id="incomeDigit1"  min="0" max="999999999" value="1000000">
+          </div>
+          <button onclick="sayDigit1()" class="btn btn-primary w-100 mb-5 mt-5">Перевести</button>
+          <h1 class="mb-5">Перевод: <output id="resultDigit1"></output></h1>
+          
+        </div>  
+      </div>
+   
+  </body>
+</html>
